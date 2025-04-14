@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 15</title>
+    <script>
+        function retornar_mes (m)
+        {
+            let n="";
+            switch (m)
+            {
+                case 1: n="Enero";
+                break;
+                case 2: n="Febrero";
+                break;
+                case 3: n="Marzo";
+                break;
+                case 4: n="Abril";
+                break;
+                case 5: n="Mayo";
+                break;
+                case 6: n="Junio";
+                break;
+                case 7: n="Julio";
+                break;
+                case 8: n="Agosto";
+                break;
+                case 9: n="Septiembre";
+                break;
+                case 10: n="Octubre";
+                break;
+                case 11: n="Noviembre";
+                break;
+                case 12: n="Diciembre";
+                break;
+                default:
+            }
+            return n
+        }
+        let mes = Number(prompt("Ingrese un numero: "));
+        let n = retornar_mes (mes);
+        if (n == "")
+            alert("Error: no es un mes");
+        else
+            alert("Mes seleccionado: " + n);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

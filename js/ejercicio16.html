@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 16</title>
+    <script>
+        function sumarRango (n1,n2)
+        {
+            let total=0;
+            for (let i = n1 ; i<=n2 ; i++)
+                total+=i;
+            alert("Total del rango: " + total);
+        }
+        let n1 = Number(prompt("Ingrese un numero: "));
+        let n2 = Number(prompt("Ingrese un numero (mayor que el anterior): "));
+        if (n1 > n2)
+            alert("Error, el primer numero debe ser menor al segundo");
+        else
+            sumarRango (n1,n2);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

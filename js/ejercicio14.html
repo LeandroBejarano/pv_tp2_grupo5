@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 14</title>
+    <script>
+        let nums = [5, 21, 16, 62, 66];
+        function listar (n)
+        {
+            for (let i = 0 ; i<n.length ; i++)
+                document.write(n[i] + "<br>");
+        }
+        function duplicar (n)
+        {
+            let numdup = Array(5);
+            document.write("Listado original: " + "<br>")
+            listar(n);
+            for (let i = 0 ; i < n.length ; i++)
+                numdup[i] = n[i] * 2;
+            document.write("Listado duplicado: " + "<br>")
+            listar(numdup);
+        }
+        duplicar(nums);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
