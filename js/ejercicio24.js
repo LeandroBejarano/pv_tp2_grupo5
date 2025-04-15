@@ -1,18 +1,12 @@
 const boton = document.getElementById("miBoton");
 const contenedor = document.getElementById("contenedor");
-let estado = "red";
+
+const colores = ["red", "blue", "green", "black", "white", "yellow", "grey"];
 
 boton.addEventListener("click", () => {
-    if (estado == "red")
-    {
-        contenedor.style.backgroundColor="blue";
-        estado = "blue";
-    }
-    else
-    {
-        contenedor.style.backgroundColor="red";
-        estado = "red";
-    }
+    const numero = Math.floor(Math.random() * 7);
+    const color = colores[numero]; 
 
-    console.log("SE CAMBIO EL COLOR A " + estado)
+    contenedor.style.backgroundColor=color;
+    console.log("SE CAMBIO EL COLOR A " + color)
 });
