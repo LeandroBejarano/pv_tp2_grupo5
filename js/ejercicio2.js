@@ -1,6 +1,5 @@
-let pares = 0;
-for (let i=0; i<10;i++)
-{
-    console.log("Número par N°" + (i+1) + ": " + pares);
-    pares+=2;
+const listarPares = () =>{
+    for (let i = 0; i<10 ; i++)
+        console.log ((i*2));
 }
+listarPares();

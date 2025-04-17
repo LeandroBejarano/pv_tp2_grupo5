@@ -1,4 +1,4 @@
-function mayor (n1, n2)
+const mayor  = (n1, n2) =>
 {
     if (n1 > n2)
         console.log("El número mayor es " + n1);

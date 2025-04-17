@@ -1,7 +1,6 @@
 const horas = 20, minutos = 38;
-
-const segundosh = h => h*3600;
-const segundosm = m => m*60;
-
-console.log("Hora establecida: " + horas + ":" + minutos);
-console.log("Expresado en segundos: " + (segundosh(horas) + (segundosm(minutos))));
+const hora = (h, m) =>{
+    console.log("Hora establecida: " + h + ":" + m);
+    console.log("Expresado en segundos: " + ((h*3600) + (m*60)));
+}
+hora (horas,minutos);
